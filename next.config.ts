@@ -1,7 +1,16 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  api: {
+    bodyParser: {
+      sizeLimit: '10mb',
+    },
+  },
+  images: {
+    domains: ['not-lain-background-removal.hf.space',
+      'res.cloudinary.com'
+    ],
+  },
 };
 
 export default nextConfig;
