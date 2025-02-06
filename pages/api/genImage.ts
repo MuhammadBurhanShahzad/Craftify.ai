@@ -9,7 +9,7 @@ const eventEmitter = new EventEmitter();
 
 
 
-const HF_TOKEN = "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";
+const HF_TOKEN = process.env.hugging_face_token;
 
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
